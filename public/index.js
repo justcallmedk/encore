@@ -92,7 +92,7 @@ $(document).ready(() => {
   //socket
   const protocol = "//";
   const host =  window.location.hostname;
-  const port =  host === 'localhost' ? '8080' : '443';
+  const port =  host === 'localhost' ? '18080' : '443';
   const socket = io.connect(protocol + host + ':' + port,{
     'sync disconnect on unload': true,
     secure:true,

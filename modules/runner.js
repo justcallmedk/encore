@@ -104,11 +104,9 @@ module.exports = class Runner{
     const func = async () => {
       let data = await this.api.getInplayEvents(this.leagueId);
       if(data.length === 0) {
-        console.log('changing interval to 60 seconds');
         interval = 60000;
       }
       else {
-        console.log('changing interval to 3 seconds');
         data = this.process(data);
         interval = 3000;
         io.emit('pong', data);

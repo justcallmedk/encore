@@ -21,7 +21,7 @@ app.use('/public', express.static('public'))
 let server = http.createServer(app)
 let io = socketIO(server);
 
-server.listen(8080);
+server.listen(18080);
 console.log('Server is listening on port 8080');
 
 //socket events handler

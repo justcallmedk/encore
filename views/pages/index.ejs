@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>🏀 Score Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="public/socket.io.min.js"></script>
+    <link rel="stylesheet" href="public/index.css">
+</head>
+<body class="container">
+    <table id="template" class="game-table" style="display:none;">
+        <tr>
+            <td class="title"></td>
+            <td class="score"></td>
+            <td class="time"></td>
+            <td class="dot"></td>
+        </tr>
+        <tr>
+            <td colspan="4" class="chart"></td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <table class="ppm-table">
+                    <tr>
+                        <td></td>
+                        <td>Points</td>
+                        <td>Projection</td>
+                    </tr>
+                    <tr class="ppm1">
+                        <td>Points Per Minute (last 1 minute)</td>
+                        <td class="points"></td>
+                        <td class="projection"></td>
+                    </tr>
+                    <tr class="ppm5">
+                        <td>Points Per Minute (last 5 minutes)</td>
+                        <td class="points"></td>
+                        <td class="projection"></td>
+                    </tr>
+                    <tr class="ppm0">
+                        <td>Points Per Minute (since the start)</td>
+                        <td class="points"></td>
+                        <td class="projection"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Target : <input type="number" class="target" />
+                            <button onClick="calculatePPM($(this))">Calculate</button>
+                        </td>
+                        <td class="target-ppm"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <h1>🏀&nbsp;March Madness Score Tracker&nbsp;🏀</h1>
+    <div id="loading">Loading ...</div>
+    <div id="main"></div>
+
+    <script type="text/javascript" src="public/index.js"></script>
+</body>
+</html>

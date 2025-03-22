@@ -1,0 +1,57 @@
+h1, #loading {
+  text-align: center;
+}
+#main {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+#main table {
+  width:800px;
+}
+#main table .title {
+  width: 350px;
+  font-weight: bold;
+}
+#main table .score {
+  text-align: center;
+  width:100px;
+}
+#main table .time {
+  text-align: right;
+  width: 330px;
+}
+#main table .dot {
+  width: 20px;
+  text-align: right;
+}
+#main table .ppm-cell {
+  text-align-last: center;
+  font-size:small;
+  height:12px;
+}
+.game-table {
+  margin-bottom:20px;
+}
+
+.chart {
+  margin-bottom:10px;
+}
+.chart .even {
+  background-color : #F8F8F8;
+}
+.chart td {
+  border: lightgray 1px dotted;
+  width: 2.5%;
+  height: 10px;
+}
+.x-legend {
+  font-size:small;
+  background-color : black !important;
+  color: white;
+  text-align: center;
+}
+
+.ppm-table .target-ppm {
+  color: red;
+}

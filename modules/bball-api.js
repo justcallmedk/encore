@@ -1,5 +1,7 @@
+const fetch = require('node-fetch');
+
 module.exports = class BBallAPI{
-  constructor(apiKey) {
+  constructor(apiKey,fetch) {
     this.host = 'https://api.b365api.com/';
     this.apiKey = apiKey;
     this.SPORTS_ID = 18;
